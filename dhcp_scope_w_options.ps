@@ -1,0 +1,2 @@
+Add-DhcpServerV4Scope -name “{{scope_name}}” -StartRange {{ip_range_start}} -Endrange {{ip_range_end}} -SubnetMask {{subnet_mask}} -State {{state}}
+Set-DhcpServerv4OptionValue -ScopeId {{scope_id}} -DnsServer {{dns_server}} -Router {{router}} -DnsDomain "{{domain_name}}"  -OptionId 042 -Value {{option42_id_value}} -OptionId 043 -Value "f1 04 0a 10 06" -OptionId 001 - Value "0x2" -OptionId 067 -Value "{{boot_value}}"
